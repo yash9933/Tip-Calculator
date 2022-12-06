@@ -25,3 +25,14 @@ function calc2(){
     let ans2 = total+(total*tip/100)
     document.getElementById("totalWithTip").value = ans2.toFixed(2)
 }
+
+function calc3(){
+    let total = parseFloat(document.getElementById("total").value)
+    let tip = parseInt(document.getElementById("tipPercent").value)
+    
+    document.getElementById("tip").value = tip
+    let ans1 = total*tip/100
+    document.getElementById("tipAmount").value = ans1.toFixed(2)
+    let ans2 = total+(total*tip/100)
+    document.getElementById("totalWithTip").value = ans2.toFixed(2)
+}
